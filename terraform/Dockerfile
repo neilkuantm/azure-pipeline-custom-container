@@ -18,6 +18,8 @@ RUN pip3 install azure-cli
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.local/bin/
 
+USER root:root
+
 ENTRYPOINT [""]
 
 CMD ["node"]
