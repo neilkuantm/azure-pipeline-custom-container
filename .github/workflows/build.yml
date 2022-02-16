@@ -24,4 +24,4 @@ jobs:
           push: true
           file: terraform/Dockerfile
           tags: |
-            ${{github.repository}}-terraform:latest
+            ghcr.io/${{github.repository}}-terraform:latest
