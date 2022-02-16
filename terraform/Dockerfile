@@ -6,4 +6,4 @@ RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
 
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
