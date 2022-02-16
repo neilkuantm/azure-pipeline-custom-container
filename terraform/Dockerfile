@@ -5,8 +5,8 @@ RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
   && apk del .pipeline-deps
   
 RUN apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo make && \
-pip install --upgrade pip && \
-pip install azure-cli
+pip3 install --upgrade pip3 && \
+pip3 install azure-cli
 
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
 
